@@ -1,0 +1,129 @@
+:root{
+    --bg-color:#1E202B;
+    --first-card-header:#2D303D;
+    --first-card-body:#323544;
+    --second-card-header:#222530;
+    --second-card-body:#262936;
+    --blue-color:#009AD8;
+}
+body{
+    background-color: #1E202B;
+}
+nav{
+    background-color: var(--bg-color);
+}
+nav .navbar-collapse{
+    margin-top: 20px;
+}
+nav .navbar-toggler{
+    box-shadow: none !important;
+    
+}
+nav .navbar-toggler:hover{
+    border: #009AD8 1px solid;
+}
+nav .collapse a{
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+nav .collapse .active ,nav .collapse a:hover{
+    border: 2px solid var(--blue-color);
+    color: var(--blue-color) !important;
+}
+nav .link-content{
+    line-height: 8px;
+}
+section{
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) ,url(../images/bg-image.jpg) no-repeat;
+    background-position:center bottom;
+    background-size: cover;
+}
+section .search-box input , .search-box input:focus{
+    background-color: var(--bg-color);
+    padding: 15px;
+    box-shadow: none;
+}
+section .search-box input::placeholder {
+    color: #8f8f8f;
+    font-size: 0.75em;
+}
+section .search-box .btn{
+    background-color: var(--blue-color);
+    right: 10px;
+}
+section .first-card .card-header, .third-card .card-header{
+    color: white;
+    background-color: var(--first-card-header);
+}
+section .first-card #degree-of-today{
+    font-size: 5em;
+}
+section .first-card .card-body, .third-card .card-body{
+    color: white;
+    background-color: var(--first-card-body);
+}
+section .second-card .card-header{
+    color: white;
+    background-color: var(--second-card-header);
+}
+section .second-card .card-body{
+    color: white;
+    background-color: var(--second-card-body);
+}
+section .card .status span{
+    color: var(--blue-color);
+}
+section .card a,section .card h5, section .card span, nav .link-content > span, footer .copyright{
+    color: #8f8f8f;
+}
+section .container .filter{
+    background-color: var(--bg-color);
+}
+section .filter{
+    height: 40%;
+}
+footer{
+    background-color: var(--second-card-body);
+}
+footer .subscribe-box input , .subscribe-box input:focus{
+    background-color: var(--bg-color);
+    padding: 15px;
+    box-shadow: none;
+}
+footer .subscribe-box input::placeholder {
+    color: #8f8f8f;
+    font-size: 0.75em;
+}
+footer .subscribe-box .btn{
+    background-color: var(--blue-color);
+    right: 21px;
+    transform: translateY(-46px);
+}
+footer .icon{
+    background-color: var(--bg-color);
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .icon a{
+    position: relative;
+    color: var(--blue-color);
+    transition: all 0.3s;
+    font-size: 0.6em;
+}
+footer .icon:hover a{
+    color: white;
+}
+footer .icon:hover{
+    background-color: var(--blue-color);
+}
+footer .baher{
+    color: #009AD8;
+    font-weight: 600;
+}
